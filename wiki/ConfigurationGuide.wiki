@@ -68,14 +68,12 @@ Run a broker at tcp://localhost:61616, for convenience we have provided an [http
 
 == Step5 ==
 
-Simply send a log and it's will be sent to activemq server.
+Simply send a log and it's will be sent to activemq server, here is an example:
 
 {{{
-
-
 private static Logger logger = LoggerFactory.getLogger(Log4jJmsAppenderSampleTest.class);
 
+in your method :
 
 logger.info("Hi, are you there?");
-
 }}}
