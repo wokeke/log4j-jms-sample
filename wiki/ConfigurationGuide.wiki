@@ -54,7 +54,6 @@ Please note we are using slf4j, you can also use commons-logging, but the former
 
 == Step2 ==
 
-Put log4j.xml in your classpath, change the configuration values according to your environment.
+Put this [http://code.google.com/p/log4j-jms-sample/source/browse/trunk/src/main/resources/log4j.xml log4j.xml] in your classpath, change the configuration values according to your environment.
 
 Please not we are not using log4j.properties because log4j.xml has a higher priority.
-
