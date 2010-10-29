@@ -49,3 +49,5 @@ Add the following dependencies to your pom.xml
 		</dependency>
 
 }}} 
+
+Please note we are using slf4j, you can also use commons-logging, but the former one is recommended. Another thing to notice is the dependency of activemq-all, don't change it to activemq-core, I've tested many times only the former one does work well.
