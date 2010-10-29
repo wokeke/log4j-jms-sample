@@ -1,13 +1,5 @@
-#The configuration guide of how you use [http://logging.apache.org/log4j/1.2/ Log4j] JMSAppender with [http://activemq.apache.org/ Apache ActiveMQ]
+#A simple configuration guide of how you use [http://logging.apache.org/log4j/1.2/ Log4j] JMSAppender with [http://activemq.apache.org/ Apache ActiveMQ]
 
-= Introduction =
+= Steps =
 
-Add your content here.
-
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+== Step1 ==
