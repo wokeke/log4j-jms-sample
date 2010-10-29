@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#The configuration guide of how you use Log4j JMSAppender with apache ActiveMQ
 
 = Introduction =
 
