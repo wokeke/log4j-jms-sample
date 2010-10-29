@@ -77,3 +77,8 @@ in your method :
 
 logger.info("Hi, are you there?");
 }}}
+
+== Step6 ==
+To verify whether the log has been sent successfully, you can [http://code.google.com/p/log4j-jms-sample/source/checkout checkout] the source code and run [http://code.google.com/p/log4j-jms-sample/source/browse/trunk/src/test/java/com/snda/infrastructure/log4j/jms/sample/Log4jJmsAppenderSampleTest.java the test case].
+
+That's it, enjoy!
