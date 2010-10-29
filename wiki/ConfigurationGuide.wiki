@@ -50,4 +50,11 @@ Add the following dependencies to your pom.xml
 
 }}} 
 
-Please note we are using slf4j, you can also use commons-logging, but the former one is recommended. <font color=red> Another thing to notice is the dependency of activemq-all, don't change it to activemq-core, I've tested many times only the former one does work well.</font>
+Please note we are using slf4j, you can also use commons-logging, but the former one is recommended. <font color=red> Another thing to notice is the dependency of activemq-all, don't change it to activemq-core, I've tested many times only the former one will work well.</font>
+
+== Step2 ==
+
+Put log4j.xml in your classpath, change the configuration values according to your environment.
+
+Please not we are not using log4j.properties because log4j.xml has a higher priority.
+
