@@ -21,7 +21,7 @@ public class JmsLogConsumer implements LogConsumer, MessageListener {
 	private Connection connection;
 	private Session session;
 	private MessageConsumer consumer;
-	private BlockingQueue<Log> buffer = new LinkedBlockingQueue<Log>();
+	private BlockingQueue<LoggingEvent> buffer = new LinkedBlockingQueue<LoggingEvent>();
 
 	public JmsLogConsumer(String url, String logTopicName) throws JMSException {
 		initialize(url, logTopicName);	
@@ -36,7 +36,7 @@ public class JmsLogConsumer implements LogConsumer, MessageListener {
 	}
 
 	@Override
-	public Log consume() {
+	public LoggingEvent consume() {
 		try {
 			return this.buffer.take();
 		} catch (InterruptedException e) {
@@ -68,9 +68,8 @@ public class JmsLogConsumer implements LogConsumer, MessageListener {
 	public void onMessage(Message message) {
 		try {
 			LoggingEvent event = (LoggingEvent) ((ObjectMessage) message).getObject();
-			Object logMessage = event.getMessage();
-			this.buffer.offer(Log.of(logMessage.toString()));
-		} catch (JMSException e) {
+			this.buffer.put(event);
+		} catch (Exception e) {
 			Throwables.propagate(e);
 		}
 	}
