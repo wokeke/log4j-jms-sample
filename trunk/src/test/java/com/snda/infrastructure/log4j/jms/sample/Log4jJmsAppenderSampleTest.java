@@ -16,7 +16,13 @@ import com.google.common.base.Predicate;
 import com.googlecode.functionalcollections.FunctionalIterable;
 import com.googlecode.functionalcollections.FunctionalIterables;
 
-
+/**
+ * Please fire a broker at tcp://localhost:61616 before running this test case,
+ * for convenience you can run {@link EmbeddedBroker} as a java application directly.
+ * 
+ * @author James Wang
+ *
+ */
 public class Log4jJmsAppenderSampleTest extends Ensure {
 	
 	private static Logger logger = LoggerFactory.getLogger(Log4jJmsAppenderSampleTest.class);
