@@ -57,3 +57,6 @@ Please note we are using slf4j, you can also use commons-logging, but the former
 Put this [http://code.google.com/p/log4j-jms-sample/source/browse/trunk/src/main/resources/log4j.xml log4j.xml] in your classpath, change the configuration values according to your environment.
 
 Please not we are not using log4j.properties because log4j.xml has a higher priority.
+
+== Step3 ==
+Run a broker at tcp://localhost:61616, for convenience we have provided an [http://code.google.com/p/log4j-jms-sample/source/browse/trunk/src/main/java/com/snda/infrastructure/log4j/jms/sample/EmbeddedBroker.java EmbeddedBroker], please feel free to use it,  alternatively you can run a standalone broker according to the [http://activemq.apache.org/getting-started.html#GettingStarted-StartingActiveMQ official reference].
