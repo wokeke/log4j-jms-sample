@@ -1,4 +1,4 @@
-#The configuration guide of how you use Log4j JMSAppender with apache ActiveMQ
+#The configuration guide of how you use [http://logging.apache.org/log4j/1.2/ Log4j] JMSAppender with [http://activemq.apache.org/ Apache ActiveMQ]
 
 = Introduction =
 
