@@ -82,3 +82,8 @@ logger.info("Hi, are you there?");
 To verify whether the log has been sent successfully, you can [http://code.google.com/p/log4j-jms-sample/source/checkout checkout] the source code and run [http://code.google.com/p/log4j-jms-sample/source/browse/trunk/src/test/java/com/snda/infrastructure/log4j/jms/sample/Log4jJmsAppenderSampleTest.java the test case].
 
 That's it, enjoy!
+
+
+References
+
+1. http://activemq.apache.org/how-do-i-use-log4j-jms-appender-with-activemq.html
