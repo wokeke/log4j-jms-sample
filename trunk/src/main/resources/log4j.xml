@@ -16,7 +16,7 @@
 	<appender name="jms" class="org.apache.log4j.net.JMSAppender">
 		<param name="InitialContextFactoryName" value="org.apache.activemq.jndi.ActiveMQInitialContextFactory" />
 		<param name="ProviderURL" value="tcp://localhost:61616" />
-		<!-- The topic binding name should be same with the value specified in jndi.properties -->
+		<!-- The topic binding name should same with the value specified in jndi.properties -->
 		<param name="TopicBindingName" value="logTopic" />
 		<param name="TopicConnectionFactoryBindingName" value="ConnectionFactory" />
 		<!-- Set username and password if required -->
