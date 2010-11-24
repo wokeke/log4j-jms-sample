@@ -50,7 +50,7 @@ Add the following dependencies to your pom.xml
 
 }}} 
 
-Please note we are using [http://www.slf4j.org/ slf4j], you can also use [http://commons.apache.org/logging/ commons-logging], but the former one is recommended.  Another important thing is <font color=red>don't change the dependency of activemq-all to activemq-core</font>, I've tested many times that only the former one will work well.
+Please note we are using [http://www.slf4j.org/ slf4j], you can also use [http://commons.apache.org/logging/ commons-logging], but the former one is recommended.  Another important thing is <font color=red>don't change the dependency of activemq-all to activemq-core</font>, I've tested them many times that only the former one will work well.
 
 == Step2 ==
 
